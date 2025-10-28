@@ -9,7 +9,7 @@ jobs:
     steps:
       - run: echo "Olá, Lucas!"
         name: Mensagem especial
-      - uses: actions/chackout@v5
+      - uses: actions/checkout@v5
         name: Fazendo clone e checkout no meu repositório nesta maquina virtual
       - name: Zipar os aruivos do meu repositório 
         run: echo ls -la
