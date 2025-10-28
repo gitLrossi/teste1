@@ -1,1 +1,15 @@
-
+# 1. Gatilho (Trigger)
+name: pipeline experimental
+on: push
+# 2. Definição dos jobs
+jobs:
+  ci-continious-integracion:
+    name: teste de CI
+    runs-on: ubuntu-latest 
+    steps:
+      - run: echo "Olá, Lucas!"
+        name: Mensagem especial
+      - uses: actions/chackout@v5
+        name: Fazendo clone e checkout no meu repositório nesta maquina virtual
+      - name: Zipar os aruivos do meu repositório 
+        run: echo ls -la
